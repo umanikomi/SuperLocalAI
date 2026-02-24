@@ -1,4 +1,4 @@
-# SuperLocalAI No.1
+# SuperLocalAI
 
 ローカルLLMとベクトルデータベースを組み合わせた、長期記憶を持つAIアシスタントのプロトタイプだよ☆
 
@@ -42,3 +42,4 @@ D:\git\superai\SuperLocalAI.No1\
 - FAISS (高速ベクトル検索)
 - SQLite (データ保存)
 - OpenAI Python SDK (LLM通信)
+
