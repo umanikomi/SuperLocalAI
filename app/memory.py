@@ -3,10 +3,10 @@ import sqlite3
 import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
-from .config import DB_PATH, INDEX_PATH, EMBED_MODEL, TOP_K
+from .config import DB_PATH, INDEX_PATH, EMBED_MODEL, EMBED_DIM, TOP_K
 
 embedder = SentenceTransformer(EMBED_MODEL)
-dimension = 384
+dimension = EMBED_DIM
 
 conn = sqlite3.connect(DB_PATH)
 cur = conn.cursor()
@@ -49,3 +49,4 @@ def retrieve_context(query):
             context.append(rows[idx])
 
     return "\n".join(context)
+
